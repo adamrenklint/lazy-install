@@ -1,13 +1,21 @@
 var lazy = require('./index');
+var tests = [];
 
-function done (err, installed) {
-  console.log(err, installed)
+function next (err) {
+
+  if (err) throw new Error(err);
+  if (!tests.length) process.exit();
+
+  var config = tests.shift();
+  lazy.install(next, config);
 }
 
-lazy.install(done, {
-  'groups': ['app'],
+tests.push({
+  'groups': ['main'],
   'before': function (group, name, version) {
-    console.log('install', group, name, version)
+    console.log('before install', group, name, version);
     return true;
   }
 });
+
+next();

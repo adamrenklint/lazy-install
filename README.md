@@ -6,7 +6,7 @@ Install different dependencies when your node.js app starts
 ## Install from npm
 
 ```javascript
-npm install lazy-install
+npm install --save lazy-install
 ```
 
 ## Define lazy dependencies

@@ -20,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/adamrenklint/lazy-install/issues"
   },
-  "homepage": "https://github.com/adamrenklint/lazy-install"
+  "homepage": "https://github.com/adamrenklint/lazy-install",
+  "lazyDependencies": {
+    "main": {
+      "wunderbits.core": "0.1.5"
+    },
+    "second": {
+      "asimov.js": "0.17.4"
+    }
+  }
 }
