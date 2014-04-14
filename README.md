@@ -53,3 +53,15 @@ lazy.install(callback, {
   'groups': groups
 });
 ```
+
+## Fine-grained control
+
+```javascript
+// Make runtime decisions on what to install
+lazy.install(callback, {
+  'before': function (group, name, version) {
+    if (name[0] !== 'a') return false;
+    return true;
+  }
+});
+```
