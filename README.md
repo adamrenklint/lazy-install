@@ -34,8 +34,9 @@ var lazy = require("lazy-install");
 
 ## Basic usage
 
+Install all lazy dependencies in *package.json*
+
 ```javascript
-// Install all lazy dependencies
 function callback (err, installed) {
   if (err) throw new Error(err);
   console.log(installed.count, installed.time);
@@ -45,8 +46,9 @@ lazy.install(callback);
 
 ## Using groups
 
+Install app dependencies, and optionally test dependencies
+
 ```javascript
-// Install app dependencies, and optionally test dependencies
 var groups = ['app'];
 if (process.env.ENV !== 'production') groups.push('test');
 lazy.install(callback, {
@@ -56,8 +58,9 @@ lazy.install(callback, {
 
 ## Fine-grained control
 
+Make runtime decisions on what to install
+
 ```javascript
-// Make runtime decisions on what to install
 lazy.install(callback, {
   'before': function (group, name, version) {
     if (name[0] !== 'a') return false;
