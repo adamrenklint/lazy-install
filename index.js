@@ -1,0 +1,1 @@
+module.exports.install = require('./lib/install');
