@@ -6,6 +6,7 @@
   "scripts": {
     "test": "node test.js"
   },
+  "bin": "bin/lazy",
   "repository": {
     "type": "git",
     "url": "https://github.com/adamrenklint/lazy-install.git"
@@ -23,10 +24,10 @@
   "homepage": "https://github.com/adamrenklint/lazy-install",
   "lazyDependencies": {
     "main": {
-      "wunderbits.core": "0.1.5"
+      "asimov.js": "0.17.4"
     },
     "second": {
-      "asimov.js": "0.17.4"
+      "wunderbits.core": "0.1.5"
     }
   }
 }

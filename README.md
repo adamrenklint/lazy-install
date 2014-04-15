@@ -6,7 +6,7 @@ Install different dependencies when your node.js app starts
 ## Install from npm
 
 ```javascript
-npm install --save lazy-install
+$ npm install --save lazy-install
 ```
 
 ## Define lazy dependencies
@@ -16,7 +16,7 @@ npm install --save lazy-install
 {
   "name": "myProject",
   "lazyDependencies": {
-    "app": {
+    "server": {
       "express": "4.0.0"
     },
     "test": {
@@ -49,11 +49,11 @@ lazy.install(callback);
 Install app dependencies, and optionally test dependencies
 
 ```javascript
-var groups = ['app'];
+var groups = ['server'];
 if (process.env.ENV !== 'production') groups.push('test');
-lazy.install(callback, {
+lazy.install({
   'groups': groups
-});
+}, callback);
 ```
 
 ## Fine-grained control
@@ -61,10 +61,20 @@ lazy.install(callback, {
 Make runtime decisions on what to install
 
 ```javascript
-lazy.install(callback, {
+lazy.install({
   'before': function (group, name, version) {
     if (name[0] !== 'a') return false;
     return true;
   }
-});
+}, callback);
+```
+
+## Use alternate dependencies
+
+Load another json file and install modules relative to its parent folder.
+
+```javascript
+lazy.install({
+  'path': process.cwd() + '/configs/dependencies.json'
+}, callback);
 ```
