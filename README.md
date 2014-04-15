@@ -11,6 +11,8 @@ $ npm install --save lazy-install
 
 ## Define lazy dependencies
 
+**Important about version numbers:** the current version of lazy-install only supports absolute version numbers
+
 ```javascript
 // package.json
 {
