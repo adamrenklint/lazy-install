@@ -1,12 +1,8 @@
 {
   "name": "lazy-install",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Install different dependencies when your node.js app starts",
   "main": "index.js",
-  "scripts": {
-    "test": "node test.js"
-  },
-  "bin": "bin/lazy",
   "repository": {
     "type": "git",
     "url": "https://github.com/adamrenklint/lazy-install.git"
