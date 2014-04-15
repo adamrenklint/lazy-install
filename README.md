@@ -71,7 +71,7 @@ lazy.install({
 
 ## Use alternate dependencies
 
-Load another json file and install modules relative to its parent folder.
+Load another json file and install modules relative to its parent folder
 
 ```javascript
 lazy.install({
