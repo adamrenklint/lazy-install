@@ -64,8 +64,8 @@ Make runtime decisions on what to install
 
 ```javascript
 lazy.install({
-  'before': function (group, name, version) {
-    if (name[0] !== 'a') return false;
+  'before': function (name, version) {
+    if (name[0] !== 'ex') return false;
     return true;
   }
 }, callback);
