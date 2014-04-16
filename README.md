@@ -73,10 +73,10 @@ lazy.install({
 
 ## Use alternate dependencies
 
-Load another json file and install modules relative to its parent folder
+Load another json file and install modules relative to its parent folder. Could be useful for when including components as git submodules.
 
 ```javascript
 lazy.install({
-  'path': process.cwd() + '/configs/dependencies.json'
+  'path': process.cwd() + '/components/foo/package.json'
 }, callback);
 ```
