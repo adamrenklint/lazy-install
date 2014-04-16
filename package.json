@@ -20,10 +20,13 @@
   "homepage": "https://github.com/adamrenklint/lazy-install",
   "lazyDependencies": {
     "main": {
-      "asimov.js": "0.17.4"
+      "asimov.js": "~0.17.4"
     },
     "second": {
       "wunderbits.core": "0.1.5"
     }
+  },
+  "dependencies": {
+    "semver": "^2.2.1"
   }
 }
