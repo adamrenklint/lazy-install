@@ -80,3 +80,5 @@ lazy.install({
   'path': process.cwd() + '/components/foo/package.json'
 }, callback);
 ```
+
+Made by [Adam Renklint](http://adamrenklint.com), Berlin 2014. [MIT licensed](https://github.com/adamrenklint/lazy-install/blob/master/LICENSE).
