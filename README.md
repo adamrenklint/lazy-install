@@ -1,7 +1,7 @@
 lazy-install
 ============
 
-Install different dependencies when your node.js app starts
+Install lazy dependencies when your node.js app starts
 
 ## Install from npm
 
