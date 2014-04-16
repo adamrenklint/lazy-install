@@ -1,7 +1,7 @@
 {
   "name": "lazy-install",
   "version": "0.1.1",
-  "description": "Install different dependencies when your node.js app starts",
+  "description": "Install lazy dependencies when your node.js app starts",
   "main": "index.js",
   "repository": {
     "type": "git",
