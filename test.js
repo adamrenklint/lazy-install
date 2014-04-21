@@ -8,5 +8,5 @@ install({
 }, function (err, installed) {
 
   if (err) return console.log('Failed!', err);
-  console.log('Installed ' + installed.count + ' module(s)');
+  console.log('Installed ' + installed.count + ' module(s), copied ' + installed.cached + ' from cache');
 });

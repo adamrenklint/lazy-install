@@ -83,6 +83,7 @@ lazy.install({
 
 ## Changelog
 
+- **0.2.1** Improved result logging, separating ```result.count``` and ```result.cached```
 - **0.2.0** Cache modules in ```/cache``` for blazing fast re-installs
 - **0.1.0** Initial release
 
