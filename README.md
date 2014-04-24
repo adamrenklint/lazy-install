@@ -1,7 +1,7 @@
 lazy-install
 ============
 
-Install lazy dependencies when your node.js app starts
+Install lazy dependencies when your node.js app starts. Modules are cached and shared between projects for blazing fast installs.
 
 ## Install from npm
 
@@ -10,8 +10,6 @@ $ npm install --save lazy-install
 ```
 
 ## Define lazy dependencies
-
-**Important about version numbers:** the current version of lazy-install only supports absolute version numbers
 
 ```javascript
 // package.json
