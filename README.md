@@ -83,6 +83,7 @@ lazy.install({
 
 ## Changelog
 
+- **0.3.0** Stores cached module in a shared folder, in ```$HOME/.lazy-install-cache```, for even faster installs when using lazy-install in multiple projects
 - **0.2.3** Fixed issue with the cache path
 - **0.2.2** Fixed critical bug in ```lib/copy```
 - **0.2.1** Improved result logging, separating ```result.count``` and ```result.cached```
